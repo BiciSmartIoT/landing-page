@@ -1,4 +1,3 @@
-import { AuthProvider } from "../contexts/AuthContext";
 import Navbar from "../components/layout/Navbar";
 import "./globals.css"; 
 
