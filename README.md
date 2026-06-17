@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BiciSmartIoT Landing Page
 
-## Getting Started
+Official landing page for BiciSmartIoT.
 
-First, run the development server:
+This repository contains the public marketing website used to present the platform, its features, pricing plans, and contact information. The landing page is completely independent from the main application and only redirects users to the frontend when they choose to access the platform.
+
+---
+
+## Project Structure
+
+```text
+src/
+├── app/
+├── components/
+│   ├── landing/
+│   └── ui/
+├── context/
+└── config/
+```
+
+### Main Sections
+
+* Hero
+* Features
+* Why Us
+* Pricing Plans
+* FAQ
+* Contact
+* Call To Action (CTA)
+* Footer
+
+---
+
+## Frontend Redirection
+
+The landing page does not contain authentication, dashboards, or business logic.
+
+Users are redirected to the main application through the Call To Action buttons.
+
+The destination URL is configured through an environment variable.
+
+---
+
+## Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_APP_URL=https://your-frontend-domain.com
+```
+
+Example:
+
+```env
+NEXT_PUBLIC_APP_URL=https://front-end-1c8.pages.dev
+```
+
+This variable is used by the landing page CTA buttons to redirect users to the application login page:
+
+```text
+${NEXT_PUBLIC_APP_URL}/login
+```
+
+---
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Build
 
-To learn more about Next.js, take a look at the following resources:
+Create a production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start production server:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies
+
+* Next.js 16
+* React 19
+* TypeScript
+* Tailwind CSS
+* Lucide React
+
+---
+
+## Related Repositories
+
+### Landing Page
+
+Public marketing website.
+
+### Frontend Application
+
+Main application containing:
+
+* Authentication
+* User profiles
+* Fleet management
+* Active rides
+* Dashboard
+* Business functionality
+
+The landing page should remain independent from the frontend application.
