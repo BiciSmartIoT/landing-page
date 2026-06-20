@@ -10,47 +10,44 @@ export default function Contact() {
   return (
     <section className="bg-black min-h-screen flex flex-col md:flex-row border-t border-white/5">
       
-      <div className="md:w-1/2 relative min-h-[600px] overflow-hidden group">
-       <Image
-  src="/assets/homepage/bike-contact.png"
-  alt="Seguridad BiciSmart"
-  fill
-  priority
-  sizes="(max-width: 768px) 100vw, 50vw"
-  className="object-cover grayscale transition-transform duration-700 group-hover:scale-110"
-/>
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
-        
-        <div className="relative z-10 h-full flex flex-col justify-end p-12 md:p-20 space-y-6">
-          <h2 className="text-6xl md:text-8xl font-black italic uppercase leading-[0.8] tracking-tighter text-white">
-            {t.contact.hero_1} <br /> 
-            <span className="text-primary">{t.contact.hero_2}</span>
-          </h2>
+<div className="md:w-1/2 relative min-h-[600px] overflow-hidden group">
+  <img
+    src="/landing-page/assets/homepage/bike-contact.png"
+    alt="Seguridad BiciSmart"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-          <p className="max-w-md text-gray-400 text-xs md:text-sm font-medium uppercase leading-relaxed tracking-tight">
-            {t.contact.hero_desc}
-          </p>
-          
-          <div className="flex gap-12 pt-8">
-            <div>
-              <div className="text-xl font-black italic text-primary">100%</div>
-              <div className="text-[8px] font-black text-gray-600 uppercase tracking-[0.2em]">
-                {t.contact.stat_1}
-              </div>
-            </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
 
-            <div>
-              <div className="text-xl font-black italic text-primary">S/ 60</div>
-              <div className="text-[8px] font-black text-gray-600 uppercase tracking-[0.2em]">
-                {t.contact.stat_2}
-              </div>
-            </div>
-          </div>
+  <div className="relative z-10 h-full flex flex-col justify-end p-12 md:p-20 space-y-6">
+    <h2 className="text-6xl md:text-8xl font-black italic uppercase leading-[0.8] tracking-tighter text-white">
+      {t.contact.hero_1}
+      <br />
+      <span className="text-primary">{t.contact.hero_2}</span>
+    </h2>
+
+    <p className="max-w-md text-gray-400 text-xs md:text-sm font-medium uppercase leading-relaxed tracking-tight">
+      {t.contact.hero_desc}
+    </p>
+
+    <div className="flex gap-12 pt-8">
+      <div>
+        <div className="text-xl font-black italic text-primary">100%</div>
+        <div className="text-[8px] font-black text-gray-600 uppercase tracking-[0.2em]">
+          {t.contact.stat_1}
         </div>
       </div>
 
+      <div>
+        <div className="text-xl font-black italic text-primary">S/ 60</div>
+        <div className="text-[8px] font-black text-gray-600 uppercase tracking-[0.2em]">
+          {t.contact.stat_2}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       <div className="md:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-[#050505]">
         <div className="max-w-md w-full mx-auto space-y-12">
           
